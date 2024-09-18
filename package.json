@@ -1,0 +1,49 @@
+{
+  "name": "projeto-monguilhott-clinica-odontologica",
+  "version": "1.0.0",
+  "description": "Landing Page projeto 9 curso Frontend",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevWesleyMedeiros/projeto-Monguilhott-clinica-odontologica.git"
+  },
+  "keywords": [
+    "keywords:",
+    "landing",
+    "page",
+    "odontologia",
+    "clinica",
+    "Vite",
+    "Bootstrap",
+    "Tailwind",
+    "Sass",
+    "TypeScript",
+    "jQuery",
+    "front-end",
+    "desenvolvimento",
+    "web"
+  ],
+  "author": "Weslei Medeiros da Rosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevWesleyMedeiros/projeto-Monguilhott-clinica-odontologica/issues"
+  },
+  "homepage": "https://github.com/DevWesleyMedeiros/projeto-Monguilhott-clinica-odontologica#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "sass": "^1.78.0",
+    "tailwindcss": "^3.4.11",
+    "vite": "^5.4.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  }
+}
