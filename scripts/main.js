@@ -1,1 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import $ from 'jquery';
+import '../src/style.scss'
+
+
+$(document).ready(()=>{
+    alert("Estou fucionando!!");
+})
