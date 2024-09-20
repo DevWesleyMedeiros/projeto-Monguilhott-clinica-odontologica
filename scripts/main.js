@@ -4,5 +4,5 @@ import '../src/style.scss'
 
 
 $(document).ready(()=>{
-    alert("Estou fucionando!!");
+    
 })

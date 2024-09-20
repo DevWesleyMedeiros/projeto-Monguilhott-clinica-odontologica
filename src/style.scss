@@ -1,16 +1,41 @@
-
 @import '@fortawesome/fontawesome-free/css/all.css';
 @import 'bootstrap/scss/bootstrap';
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
   border: none;
-  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  
 }
-h1{
-    font-size: 50px;
-    color: white;
+
+//Variáveis:
+$cor-debug: #e3010899;
+$borda-delimitadora: 1px solid #000;
+
+.main-header{
+    width: 100%;
+    background-image: url('../assets/imagens/bg_01.png');
+    background-size: cover;
+
+    header{
+        border: $borda-delimitadora;
+
+        .container-header{
+            display: flex;
+            
+            div.logo{
+                width: 166px;
+                height: 64px;
+                background-image: url('../assets/imagens/logo.png');
+                background-size: 100% 100%;
+            }
+        }
+    }
 }
