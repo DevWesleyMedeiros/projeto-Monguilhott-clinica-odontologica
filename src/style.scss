@@ -18,23 +18,68 @@
 //Variáveis:
 $cor-debug: #e3010899;
 $borda-delimitadora: 1px solid #000;
+$text-color: #fff;
+
+.selected{
+    width: 30%;
+    height: 2px;
+    background-color: #171616;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+}
 
 .main-header{
     width: 100%;
+    min-height: 700px;
     background-image: url('../assets/imagens/bg_01.png');
     background-size: cover;
+    color: $text-color;
 
     header{
-        border: $borda-delimitadora;
+        border: 1px solid #948e8e;
+        padding: 1.5rem 0;
 
         .container-header{
+            width: 100%;
             display: flex;
-            
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+
             div.logo{
-                width: 166px;
-                height: 64px;
+                width: 250px;
+                height: 80px;
                 background-image: url('../assets/imagens/logo.png');
                 background-size: 100% 100%;
+                padding: 1rem;
+                margin-left: 5%;
+            }
+            nav{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+
+                ul{
+                    list-style-type: none;
+
+                    li{
+                        display: inline-block;
+                        margin: 0 1rem;
+                        position: relative;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    li.contact{
+                        font-weight: bold;
+                        font-size: 1.5em;
+                        transition: color 0.7 ease-in-out;
+                    }
+                    li:hover{
+                        color: #ded5d5;
+                    }
+                }
             }
         }
     }
