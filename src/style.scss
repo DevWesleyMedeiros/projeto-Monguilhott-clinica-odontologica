@@ -1,5 +1,6 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 @import 'bootstrap/scss/bootstrap';
+@import '_responsive.scss';
 
 @font-face {
     font-family: 'Roboto';
@@ -12,13 +13,64 @@
   box-sizing: border-box;  
   border: none;
   font-family: 'Roboto', sans-serif;
-  
+}
+body, html{
+    height: 100%;
 }
 
 //Variáveis:
 $cor-debug: #e3010899;
 $borda-delimitadora: 1px solid #000;
 $text-color: #fff;
+
+//Style nav bar mobile
+.section-mobile{
+    display: none;
+    width: 100%;
+    min-height: 200px;
+    background-image: url('../assets/imagens/bg_01.png');
+    background-size: cover;
+    color: #fff;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .logo-mobile{
+        display: none;
+        width: 250px;
+        height: 80px;
+        background-image: url('../assets/imagens/logo.png');
+        background-size: 100% 100%;
+        padding: 1rem;
+    }
+    .navBar-mobile{
+        display: none;
+    }
+
+}
+
+.link-decoration{
+    text-decoration: underline;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+ul li.nav-item a.nav-link:hover{
+    color: #ffff !important;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93c1ac;
+    margin-top: 0.5rem;
+}
+.flex-button{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-top: 0.5rem;
+}
+// Final style navbar mobile
 
 .selected{
     width: 30%;
@@ -38,7 +90,7 @@ $text-color: #fff;
     color: $text-color;
 
     header{
-        border: 1px solid #948e8e;
+        border-bottom: 3px solid rgba(71, 83, 88, 0.14);
         padding: 1.5rem 0;
 
         .container-header{
@@ -48,7 +100,7 @@ $text-color: #fff;
             align-items: center;
             padding-left: 10%;
 
-            div.logo{
+            div.logo-desktop{
                 width: 250px;
                 height: 80px;
                 background-image: url('../assets/imagens/logo.png');
