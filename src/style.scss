@@ -3,8 +3,12 @@
 @import "_responsive.scss";
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto_titulos";
   src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Roboto_regular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 * {
@@ -12,7 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto_regular", sans-serif;
 }
 body,
 html {
@@ -209,6 +213,7 @@ ul li.nav-item a.nav-link:hover {
 }
 section.diferenciais{
     padding: 40px 0;
+    font-family: "Roboto_titulos", "sans-serif";
 
     .container-diferenciais{
         display: grid;
@@ -237,5 +242,64 @@ section.diferenciais{
                 color: #000;
             }
         }
+    }
+}
+section.sobre{
+    padding: 40px 0;
+
+    .container-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .img-ilustrative{
+            max-width: 700px;
+
+            img{
+                width: 100%;
+            }
+        }
+        .sobre-texto{
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+
+            h2{
+                font-size: 33px;
+                color: #a9c4b8;
+                font-weight: $font-weigth-subtitle;
+
+                strong{
+                    color: #7dd5b0;
+                }
+            }
+            p{
+                position: relative;
+                font-size: 15px;
+                color: #000;
+                z-index: 1;
+            }
+        }
+    }
+}
+section.depoimentos{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../assets/imagens/bg_02.png");
+    background-size: cover;
+    text-align: center;
+    font-family: "Roboto_titulos", "sans-serif";
+    position: relative;
+    z-index: 3;
+    top: -25%;
+
+    .container-depoimentos{
+        position: absolute;
+        top: 200px;
     }
 }
