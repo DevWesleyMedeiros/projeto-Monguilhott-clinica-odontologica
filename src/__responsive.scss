@@ -1,34 +1,67 @@
-@media (max-width: 768px){
-    .section-mobile{
-        display: flex !important;
-        border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+@media (max-width: 768px) {
+    .section-mobile {
+      display: flex !important;
+      border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+      position: relative;
+  
+      .logo-mobile {
+        position: absolute;
+        margin-top: 1rem;
+        display: block !important;
+      }
+      .navBar-mobile {
+        display: block !important;
+        width: 100%;
+      }
+  
+      ul {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
         position: relative;
-
-        .logo-mobile{
-            position: absolute;
-            margin-top: 1rem;
-            display: block !important;
+        align-items: center;
+  
+        li.nav-item {
+          width: 100%;
+          border: 1px solid #ccc;
+          padding: 0.2rem 0;
+          text-align: center;
         }
-        .navBar-mobile{
-            display: block !important;
-            width: 100%;
-        }
-        ul{
-            width: 100%;
-            position: absolute;
-            z-index: 2;
-            position: relative;
-            align-items: center;
-
-            li.nav-item{
-                width: 100%;
-                border: 1px solid #ccc;
-                padding: 0.2rem 0;
-                text-align: center;
-            }
-        }
+      }
     }
-    section.main-header{
+  
+    .main-header {
+      header {
         display: none;
+      }
+      .content-header {
+        align-items: flex-start;
+  
+        .form {
+          width: 100%;
+          padding-right: 15%;
+          text-align: center;
+        }
+        .ilustrations-images {
+          display: none;
+        }
+      }
+    }
+  
+    section.diferenciais {
+        width: 100%;
+
+      .container-diferenciais {
+        grid-template-columns: repeat(6, 1fr);
+        grid-row-gap: 1.5rem;
+        background-color: blue;
+        margin: 0;
+
+        .diferenciais-single-container {
+          text-align: center;
+          width: 100%;
+        }
+      }
     }
 }
+  
