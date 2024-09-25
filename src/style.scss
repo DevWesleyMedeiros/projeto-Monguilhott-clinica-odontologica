@@ -364,7 +364,6 @@ section.etapas{
                     padding: 0.5rem;
                     align-items: center;
                 }
-
             }
 
             .numbers-center{
@@ -425,5 +424,10 @@ section.etapas{
                 }
             }
         }
+    }
+    .diferencas{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 }

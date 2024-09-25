@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 968px) {
     .section-mobile {
       display: flex !important;
       border-bottom: 3px solid rgba(71, 83, 88, 0.14);
@@ -52,12 +52,13 @@
         width: 100%;
 
       .container-diferenciais {
-        grid-template-columns: repeat(6, 1fr);
+        
+        display: flex !important;
+        flex-direction: column;
         margin: 0;
 
         .diferenciais-single-container {
-          text-align: center;
-          width: 100%;
+          align-items: center;
         }
       }
     }
@@ -73,4 +74,27 @@
             padding: 0.5rem;
         }
     }
+    .container-etapas{
+        width: 100%;
+        margin: 0;
+
+        .container-each-side{
+            flex-wrap: wrap;
+
+            .left-container{
+                flex-direction: column;
+            }
+            .numbers-center{
+                display: none !important;
+            }
+            .right-container{
+                margin: 0;
+
+                .right-container_etapa{
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+    
 }
