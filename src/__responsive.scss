@@ -75,7 +75,6 @@
         }
     }
     .container-etapas{
-        width: 100%;
         margin: 0;
 
         .container-each-side{
@@ -94,6 +93,19 @@
                     margin: 1rem 0;
                 }
             }
+        }
+    }
+    .diferencas{
+        flex-direction: column;
+        align-items: center;
+
+        .invisalign{
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .line{
+            display: none;
         }
     }
     
