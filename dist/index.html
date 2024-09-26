@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 09</title>
+  <script type="module" crossorigin src="/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/index.css">
+</head>
+<body>
+    <div class="section-mobile">
+        <div class="logo-mobile"></div>
+        <nav class="navbar navbar-expand-lg navBar-mobile" style="background-color: transparent;">
+            <div class="container-fluid flex-button">
+                <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex" id="navbarNav">
+    
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link link-decoration" aria-current="page" href="#">Invisalign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-decoration" href="#">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-decoration" href="#">Serve para mim?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-decoration" href="#">Contatos</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <section class="main-header">
+        <header>
+            <div class="container-header">
+                <div class="logo-desktop"></div>
+                <nav class="nav-desktop">
+                    <ul id="list-header-items">
+                        <li>Invisalin</li>
+                        <li>Benefícios</li>
+                        <li>Servem para mim?</li>
+                        <li>Contato</li>
+                        <li class="contact">(99) 99999-9999</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content-header">
+            <div class="form">
+                 <h2>
+                    Seu sorriso perfeito através de um tratamento discreto e inovador, em Florianópolis.
+                </h2>
+                 <p>
+                    Alinhe seus dentes com conforto, praticidade e liberdade! <strong>Deixe seu email</strong> que a Dra. Leda possa entrar em contato e agendar uma avaliação gratuita.
+                </p>
+                 <form>
+                    <input type="email">
+                    <input type="button" value="Quero saber mais">
+                 </form>
+                 <span>
+                    Ou ligue para a Clínica Monguilhott (99) 99999-9999
+                </span>
+            </div>
+            <div class="ilustrations-images">
+                <div class="images">
+                    <img src="/circle01.png" alt="Imagem ilustrativa1">
+                    <img src="/circle02.png" alt="Imagem ilustrativa2">
+                    <img src="/circle03.png" alt="Imagem ilustrativa3">
+                    <img src="/circle04.png" alt="Imagem ilustrativa4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="diferenciais">
+        <div class="container-diferenciais">
+            <div class="diferenciais-single-container">
+                <img src="data:image/png;base64,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" alt="Icone circulo vazio" class="img-icons">
+                <h2>Discreto por ser <strong>transparente</strong></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+            <div class="diferenciais-single-container">
+                <img src="data:image/png;base64,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" alt="Icone hamburguer" class="img-icons">
+                <h2>Movel, <strong>não atrapalha</strong> para comer ou beber</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+            <div class="diferenciais-single-container">
+                <img src="/icone03.png" alt="Icone não prejudica os dentes" class="img-icons">
+                <h2>Livro de fios ou metais, <strong>Muito mais conforto</strong></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+            <div class="diferenciais-single-container">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAAAAXNSR0IArs4c6QAAB6tJREFUaAXdWl1sVEUUnrn713Zb4g8qGAwSgUZBmkJLMJGIiWLAFAMo4UcqhYDEN2N8IJpYHhQjxgejLxhpKYY/DUUajdFEIRg1tpWQgFpQkYQokYK1f2y3u3f8vtl7l+1ut3t397ZbuA+7c+fOnPN9M3PPzD3nSOHyNeHModtCfX2LhBTzTCHKpRAzlVC3CyXKhJAlQqh+POuRQl5RQpw1hOjAs/aiYPBY96xVV92EA935XyU/7b87HLm2Vkq5GkQqARaYs7ykMEH4pFLqgN9bvK9/7pq/spSQ0jwvcoGTDTPMiHhdKbECM+KJSZchIdX3hhQnhJK/gGeHTxqXSkon9D5aPtD/TUegpL+3u3RQmZPApxxt7zeVWIi2D0FGkSUjKqU4bHjFKwOVdedSUDusyIlc6ammOwcGo69hlDdjlnxYZgPQ1+IRxt7JE9WXf06rCznUH2927/mGor875eKoMNejsgZyA5A7iNXwQcDn2d5bUftPvLHDQlbk5rW1+U6Zp7cJab4M5aXQEYHyD/0lor5vVt0lhzozNgueaZgU7hf1GLxNaOwFyV6hjJ0Vxuwd7VVVgxkFWA0ckytr2zcxpEKfYAk+YvVt9kjftoHq9R1OlWXbLtC6tzyqBneg33L2xVI9XiSLnu6pWtvpRJYjcv7WptlKRY/CWEyD0IvC8K6JVNV+60SBG228bU0PCzOyH7KmwOicl9KzLFxdezqT7IzkAq2Ny6LK/AiCyiD4B39QLM9lCfraGt4XSi32eAKPheauu5AJWPJzvVT7RDMGeAGe9Xik8exA9Yajye0S70c02ZqYMJvRoQxLomnqrXctyoUYFeL92YolPT1qhpckAnBapl7qJw70KYPhaSa+kfqnJcelqGcMttyQcvtg9cbnfpuxlFYxt8ve+5S0tozsxVA/cRAP91LiI850koYlR+PBdwyd9IyFq+vq0wkoRD3x2DNInMQ7HI4UcjT32irCePAdm3rLpC3DdSx0HXERH40c8RJ3MqYUctzHLHN/kcYjr6WYrM3Fe+IiPoi8SLx6/02SP4QcTx56g2YjmPtcjUeSjlG71fiAUyvAwULjT9A2hByPVNbJo3ks97EEPFkXLZzNxK3xJ0iIk+MhWJ8VcaTiySOhzbgvWngjxE8eNuA4OZ7uwd7Hs+JoHqlsxW7+Ey9xE7/mYQnX5Pg9Bquzkqd7HoLdVDxWsjRu4IdxWUE+1KvJ8UMTrFluGe9GJN1gWbhb+F2p+djkMKWr2cmjZFO6zjdCPb8nidPmY9DngSVZiarQ5DvEVzcCiXQY+aFMHuRDXoZ25nBJwjWQyxd0OkWFqNf4wYOvGHmBlJhHINrnUQhELuuM8wAvg+43LR/OHJf1FEacxYO8QFTMJArMZEdh0Lir1eZBXgYco/pzge43d9UURprNg7ywtyl4goUIFgd6CgPHXa30j8YkqjIDztBi3ix6QFxzV02yNNmta5S5eeKvn+oBTW7hxj0dvzE9sphbgCZ17GehSbqhYHgZ6k3WY7lUdPVcOfiMOpSzu2F4+bFaerRjJdWPZSn1cuy7NjBqo0llkfkbd+DLeY9WrMSSI+1978ZAuPtLV72WiGALraV2cNJ3766aVGkzg8EtOBsd4xNlqhd8rY0vprbKr8bmgYG8Qmt5luJ0UCI/uRl7n5m1KhwM+FfAuaO3HSXMt/2tu5/K2DGLBjYP8jKwLmP7G6ItWcjIuel/c9b96xGBpRjNTm6u2Gz3+dob9SkpZ6GJHS0e5AVrKdr5TIeREhuNYjlUve4P6MWMIdylRAmWaEvxj7vvcUNlnAd4GYxock0yPsYwkhsKnMiAgfkOI7sB7yAO8WoywkWf5btFaPyM84EPeRkM1eLlO4lXXMfHnABzq014/saDkPUq5cH/8WBX99WP89kiGN8jD/IhLyxNLfgA/63AH4tjdkWq696AgWmIKVRPHGnrey9X5TZ+DJTmo8kxBo31H4XQGkZTchWea785cs7z0P81+wPYVm9b40vZyrJw15BHjI/lQ2FwHaN3GC93gBHNbAXn257R0lKfWAkMsc8uZb7lb9+jA45OZWvcwE8edrKAnjkKYHAdf/T9bWJE06lQt9p1VdZ1efzeJ2EMLmOQDRU133Eqm3iJG30HLR66a5wcswakIXeh1muFap3Kdq1dqKIWUVNvDUa/A0C/cCrYwuuFIdmVmP2A09f1i772UDjyO0auFFO58EZwqVsh5RMYjN4iv/e+xKyH+MyRon6ArAFNFzHoQhiX60OduaTxxWLlsETGzkRi7D2EHCuYDoFlcRzFKWHEoKef+zzA+vF2ERfxAdcU4iXuZIwp5Gi5mA6B9XseR4cFF7ou8T0cdxdxER9xEu9w+Skp5MiCeR5Mh2ARvvdaf2tDPevHy0U8xAU8PcSZLi9liEFJBh/PZoBpxtQ3MVRbyEgrl6KeMRLD+RHu8+UjpWuMSI5kNUEX8lCSBy7bexoPvmNciujrKA8lIzmCuGkziOwRvmlzv2yCN23Wnk2Q/2nzLRHfYxgsl2iRzre8LB6PSkUrOPb5lokEWc4mU5YebTp+6R+lG3HcZsomk7wpc5yTSfJ++Ox0BlsQk6DrXnu4JbLTRad2v41idvr/F3SzlHPIH9wAAAAASUVORK5CYII=" alt="Icone relógio" class="img-icons">
+                <h2>Consultas e <strong>Resultados mais rápido</strong></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+            <div class="diferenciais-single-container">
+                <img src="data:image/png;base64,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" alt="Icone da caricatura sorridente" class="img-icons">
+                <h2>Não atrapalha para <strong>Falar ou Cantar :)</strong></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+            <div class="diferenciais-single-container">
+                <img src="data:image/png;base64,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" alt="Icone dentinho sorridente" class="img-icons">
+                <h2>Veja o resultado <strong>Antes de começar</strong></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati cum harum, sequi veritatis pariatur ipsum! Voluptatum, tempore hic iure, tempora blanditiis illum voluptate error qui minima, vero odio sint.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sobre">
+        <div class="container-sobre">
+            <div class="img-ilustrative">
+                <img src="/rosto.png" alt="Rosto ilustrativo">
+            </div>
+            <div class="sobre-texto">
+                <h2>
+                    O futuro chegou e ele é transparente
+                </h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, accusamus veniam. Rerum consequuntur aut sit itaque, adipisci perferendis neque. Explicabo ea atque reprehenderit architecto, inventore nihil dignissimos. Doloremque, maiores quis.
+                </p>
+                <h2>Conheça o procedimento com a 
+                    <strong>Dra. Leda Monguilhott</strong>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit ducimus sapiente, quam distinctio iusto quisquam aliquid recusandae laboriosam nulla ex id. Culpa et distinctio aspernatur molestiae aperiam voluptates at!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos">
+        <div class="container-depoimentos">
+            <h2>
+                "Sensação de liberdade á para saber que você não esta amarrado a nada"
+            </h2>
+        </div>
+    </section>
+    <section class="etapas">
+        <h2>Sem dúvidadas, serve para você! Veje como funciona</h2>
+        <div class="container-etapas">
+
+            <div class="container-each-side">
+
+                <div class="left-container">
+                    <div class="left-container_groups group01">
+                        <img src="/round_etapas_01.jpg" alt="Imagem etapa ilustrativa 01" class="image01">
+                        <p>Aparelho tradicional é Invisalign</p>
+                    </div>
+                    <div class="left-container_groups group02">
+                        <img src="/round_etapas_02.jpg" alt="Imagem etapa ilustrativa 02">
+                    </div>
+                    <div class="left-container_groups group03">
+                        <img src="/round_etapas_03.jpg" alt="Imagem etapa ilustrativa 03">
+                    </div>
+                </div>
+
+                <div class="numbers-center">
+                    <div class="numbers-center_number number01">01</div>
+                    <div class="numbers-center_number">02</div>
+                    <div class="numbers-center_number">03</div>
+                    <div class="numbers-center_number">04</div>
+                    <div class="line-height"></div>
+                </div>
+
+                <div class="right-container">
+                    <div class="right-container_etapa">
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas modi at sed numquam pariatur quae, officiis cupiditate voluptatibus libero adipisci quod labore distinctio illum! Minus temporibus quae mollitia minima!
+                        </p>
+                    </div>
+                    <div class="right-container_etapa">
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas modi at sed numquam pariatur quae, officiis cupiditate voluptatibus libero adipisci quod labore distinctio illum! Minus temporibus quae mollitia minima!
+                        </p>
+                    </div>
+                    <div class="right-container_etapa">
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas modi at sed numquam pariatur quae, officiis cupiditate voluptatibus libero adipisci quod labore distinctio illum! Minus temporibus quae mollitia minima!
+                        </p>
+                    </div>
+                    <div class="right-container_etapa">
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas modi at sed numquam pariatur quae, officiis cupiditate voluptatibus libero adipisci quod labore distinctio illum! Minus temporibus quae mollitia minima!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diferencas">
+                <div class="tradicional">
+                    <h2>Tradicional</h2>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                    <div class="item">Aparelho fixo
+                        <div class="taxado"></div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                
+                <div class="invisalign">
+                    <img src="/invisalign.jpg" alt="Logo Invisalign">
+                    <p>Aparelho fixo</p>
+                    <p>Aparelho fixo</p>
+                    <p>Aparelho fixo</p>
+                    <p>Aparelho fixo</p>
+                    <p>Aparelho fixo</p>
+                    <p>Aparelho fixo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <div class="info-contato">
+            <h2>Entre em contato</h2>
+            <small>Telefone: <b>(99) 99999-9999</b></small>
+            <small>Email: <b>contato@usuario.com.br</b></small>
+            <small>Endereço: <b>Rua nome número 999</b></small>
+        </div>
+        <div class="form_contato">
+            <form>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+                <input type="email" name="Email" placeholder="Seu Email de contato" required>
+                <input type="tel" name="telefone" placeholder="Seu telefone">
+                <textarea name="mensagem" placeholder="Deixe uma mensagem"></textarea>
+                <button>Button</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="logo-footer"></div>
+    </footer>
+</body>
+</html>
