@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "Roboto_titulos";
-  src: url("../fonts/Roboto/Roboto-Black.ttf");
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto_regular";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
 }
 
 * {
@@ -23,15 +23,16 @@ html {
   height: 100%;
 }
 
-//Variáveis:
 $cor-debug: #e3010899;
 $borda-delimitadora: 1px solid #000;
 $text-color: #7dd5b0;
 $text-color2: #509d87;
-$font-weigth-subtitle: normal;
+$default-black: #000;
+$hover-button-color: #0ed2a7;
+$font-weight-subtitle: normal;
 
 
-//Style nav bar mobile
+
 .section-mobile {
   display: none;
   width: 100%;
@@ -76,8 +77,6 @@ ul li.nav-item a.nav-link:hover {
   justify-content: flex-end !important;
   margin-top: 0.5rem;
 }
-// Final style navbar mobile
-
 .selected {
   width: 30%;
   height: 2px;
@@ -85,7 +84,6 @@ ul li.nav-item a.nav-link:hover {
   position: absolute;
   bottom: -5px;
   left: 0;
-  transition: all 0.7s ease-in-out;
 }
 
 .main-header {
@@ -132,7 +130,7 @@ ul li.nav-item a.nav-link:hover {
           li.contact {
             font-weight: bold;
             font-size: 1.5em;
-            transition: color 0.7 ease-in-out;
+            transition: color 0.7s ease-in-out;
           }
           li:hover {
             color: #ded5d5;
@@ -157,7 +155,7 @@ ul li.nav-item a.nav-link:hover {
 
       h2 {
         font-size: 37px;
-        font-weight: $font-weigth-subtitle;
+        font-weight: $font-weight-subtitle;
         color: $text-color2;
       }
       p {
@@ -177,11 +175,18 @@ ul li.nav-item a.nav-link:hover {
         }
         input[type="button"] {
           background-color: #00daaaaa;
+          border: 1px solid $hover-button-color;
           width: 251px;
           height: 45px;
           border-radius: 20px;
           outline: none;
           margin: 10px 0;
+          transition: all 0.5s ease-in-out;
+        }
+        input[type=button]:hover{
+            background: #0ed2a7;
+            color: white;
+            font-size: 1em;
         }
       }
       span {
@@ -234,14 +239,14 @@ section.diferenciais{
             }
             h2{
                 font-size: 30px;
-                font-weight: $font-weigth-subtitle;
+                font-weight: $font-weight-subtitle;
 
                 strong{
                     color: $text-color;
                 }
             }
             p{
-                color: #000;
+                color: $default-black;
             }
         }
     }
@@ -270,7 +275,7 @@ section.sobre{
             h2{
                 font-size: 33px;
                 color: #a9c4b8;
-                font-weight: $font-weigth-subtitle;
+                font-weight: $font-weight-subtitle;
 
                 strong{
                     color: $text-color;
@@ -279,7 +284,7 @@ section.sobre{
             p{
                 position: relative;
                 font-size: 15px;
-                color: #000;
+                color: $default-black;
                 z-index: 1;
             }
         }
@@ -396,7 +401,7 @@ section.etapas{
                 .line-height{
                     height: 400px;
                     width: 1px;
-                    border: 1px solid #000;
+                    border: 1px solid $default-black;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -452,7 +457,7 @@ section.etapas{
 
                 .taxado{
                     position: absolute;
-                    width: 120px;
+                    width: 125px;
                     height: 2px;
                     background-color: #aa3a3a; 
                     bottom: 12px;
@@ -463,7 +468,7 @@ section.etapas{
         }
         .line{
             width: 1px;
-            height: 320px;
+            height: 325px;
             border: 1px solid #4f4c4c;
             margin: 0 5rem;
             
@@ -483,39 +488,66 @@ section.etapas{
         }
     }
 }
-section.contato{
+section.contato {
+    min-height: 500px;
     padding: 40px 0;
     background-color: #98FCDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .info-contato{
+    .info-contato {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid $default-black;
+        margin-bottom: 0.5rem;
 
         h2{
             font-size: 24px;
-            font-family: "Roboto", "sans-sefif";
+            font-family: "Roboto", "sans-serif";
             color: $text-color2;
         }
         small{
             color: $text-color2;
             font-size: 15px;
         }
-    .form {
+    }
+    .form_contato{
+        width: 50%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-items: end;
 
         form{
+            display: flex;
+            flex-direction: column;
             width: 100%;
+            padding: 0.5rem;
 
-
+            input[type=text], input[type=email], input[type=tel]{
+                height: 40px;
+                border-radius: 40px;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                outline: none;
+                border: 1px solid #ccc;
+            }
+            textarea{
+                resize: none;
+                border: 1px solid #ccc;
+                height: 120px;
+                padding: 0.5rem;
+                margin: 0.5rem 0.5rem;
+                outline: none;
+            }
 
             button {
                 width: 150px;
                 height: 60px;
-                border: 3px solid #315cfd;
+                border: 3px solid $hover-button-color;
                 border-radius: 45px;
                 transition: all 0.3s;
                 cursor: pointer;
@@ -524,7 +556,7 @@ section.contato{
                 font-weight: 550;
             }
             button:hover {
-                background: #315cfd;
+                background: $hover-button-color;
                 color: white;
                 font-size: 1.5em;
             }
@@ -532,4 +564,17 @@ section.contato{
     }
 }
 
+footer{
+    width: 100%;
+    background-color: #6CC5B2;
+    min-height: 150px;
+    padding-top: 1rem;
+
+    .logo-footer{
+        width: 250px;
+        height: 80px;
+        background-image: url("../assets/imagens/logo.png");
+        background-size: 100% 100%;
+        margin: 0 auto;
+    }
 }
